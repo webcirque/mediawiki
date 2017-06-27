@@ -1,9 +1,10 @@
+mw.loader.load
 //MediaWiki Information
 function _mw() {
  pageInfo = window.location.search.replace("?","");}
  if (window.location.pathname.search("index.php") > -1) {
- _mw.pagename = _wm.ws("pageInfo").getItem("title");
- _mw.namespace = _wm.ws("pageInfo").getItem("title").split(":")[0];}
+ _mw.pagename = _wsgetItem(pageInfo,"title","&","=");
+ _mw.namespace = _mw.pagename.split(":")[0];}
 else {
  _mw.namespace = window.location.pathname.replace("/","").split(":")[0];
  _mw.pagename = window.location.pathname.replace("/","");}
