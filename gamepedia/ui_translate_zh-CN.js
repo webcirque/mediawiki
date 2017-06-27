@@ -18,6 +18,7 @@ function _uitranslation() {
     output = actvs.getElementsByTagName("li")[donum].innerHTML;
     output = output.replace(">diff<","差异");
     output = output.replace(">hist<","历史");
+    donum ++;
    }
   }
  }
