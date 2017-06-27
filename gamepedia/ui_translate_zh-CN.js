@@ -11,7 +11,7 @@ _mw();
 console.warn("MediaWiki Information Module initialized.");
 
 function _uitranslation() {
- if (_mw.namespace = "UserProfile") {
+ if (_mw.namespace == "UserProfile") {
   actvs = document.getElementsByClassName("activity section")[0];
   if (actvs) {
    donum = 0;
