@@ -38,12 +38,23 @@ function _uitranslation() {
    donum = undefined;
    actnum = undefined;
    output = undefined;
+   _translated = true;
   }
  }
 }
-_uitranslation.loopId = setInterval("_uitranslation();",50);
 
-function _uitranslation_stop() {
- clearInterval(_uitranslation.loopId);}
+function _uitranslation_detector() {
+ if (_uitranslation.loopInterval = undefined) {_uitranslation.loopInterval = 200;}
+ if (_uitranslation.disabled = false) {
+  _uitranslation.loopId = setInterval("_uitranslation();",loopInterval);
+  console.warn("UI translation has started looping.");
+ }
+ else if (_uitranslation.disabled = true) {
+  if (translated = true) {
+   clearInterval(_uitranslation.loopId);
+  }
+ }
+}
+setInterval("_uitranslation_detector()",50)
 
 _uitranslation.loaded = true;
