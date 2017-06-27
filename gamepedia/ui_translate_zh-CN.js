@@ -6,7 +6,11 @@ function _mw() {
  _mw.namespace = _mw.pagename.split(":")[0];}
 else {
  _mw.namespace = window.location.pathname.replace("/","").split(":")[0];
- _mw.pagename = window.location.pathname.replace("/","");}}
+ _mw.pagename = window.location.pathname.replace("/","");}
+ if (_mw.namespace == _mw.pagename){
+  _mw.namespace = "(default)";
+ }
+}
 _mw();
 console.warn("MediaWiki Information Module initialized.");
 
