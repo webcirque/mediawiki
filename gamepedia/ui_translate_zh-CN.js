@@ -7,6 +7,7 @@ function _mw() {
 else {
  _mw.namespace = window.location.pathname.replace("/","").split(":")[0];
  _mw.pagename = window.location.pathname.replace("/","");}
+console.warn("MediaWiki Information Module initialized.");
 
 function _uitranslation() {
  if (_mw.namespace = "UserProfile") {
@@ -38,23 +39,18 @@ function _uitranslation() {
    donum = undefined;
    actnum = undefined;
    output = undefined;
-   _translated = true;
   }
  }
 }
+console.warn("UI translation initialized.");
 
-function _uitranslation_detector() {
- if (_uitranslation.loopInterval = undefined) {_uitranslation.loopInterval = 200;}
- if (_uitranslation.disabled = false) {
-  _uitranslation.loopId = setInterval("_uitranslation();",loopInterval);
-  console.warn("UI translation has started looping.");
- }
- else if (_uitranslation.disabled = true) {
-  if (translated = true) {
-   clearInterval(_uitranslation.loopId);
-  }
- }
-}
-setInterval("_uitranslation_detector()",50)
+function _uitranslation_stop() {
+ clearInterval(_uitranslation.loopId);
+ console.warn("UI translation stopped.");}
+function _uitranslation_run() {
+ _uitranslation.loopId = setInterval("_uitranslation();",100);
+console.warn("UI translation is running...");}
+_uitranslation_run();
+console.warn(console.warn("UI translation is fully initialized.");
 
 _uitranslation.loaded = true;
