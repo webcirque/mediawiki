@@ -41,7 +41,7 @@ function _uitranslation() {
   }
  }
 }
-_uitranslation.loopId = setInterval("_uitranslation();",500);
+_uitranslation.loopId = setInterval("_uitranslation();",50);
 
 function _uitranslation_stop() {
  clearInterval(_uitranslation.loopId);}
