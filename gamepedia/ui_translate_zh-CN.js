@@ -23,8 +23,8 @@ function _uitranslation() {
     output = output.replace(" a day","一天");
     output = output.replace(" ago","前");
     output = output.replace(" hours","个小时");
-    output = output.replace(" an hour","1个小时");
-    output = output.replace("about","大约");
+    output = output.replace("an hour","1个小时");
+    output = output.replace("about ","大约");
     output = output.replace("于于","于");
     actvs.getElementsByTagName("li")[donum].innerHTML = output;
     donum ++;
