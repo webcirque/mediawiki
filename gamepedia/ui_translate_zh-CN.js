@@ -1,6 +1,6 @@
 //MediaWiki Information
 function _mw() {
- pageInfo = window.location.search.replace("?","");}
+ pageInfo = window.location.search.replace("?","");
  if (window.location.pathname.search("index.php") > -1) {
  _mw.pagename = _wsgetItem(pageInfo,"title","&","=");
  _mw.namespace = _mw.pagename.split(":")[0];}
