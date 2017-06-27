@@ -18,6 +18,14 @@ function _uitranslation() {
     output = actvs.getElementsByTagName("li")[donum].innerHTML;
     output = output.replace(">diff<",">差异<");
     output = output.replace(">hist<",">历史<");
+    output = output.replace(')">',')">于');
+    output = output.replace(" days","天");
+    output = output.replace(" a day","一天");
+    output = output.replace(" ago","前");
+    output = output.replace(" hours","个小时");
+    output = output.replace(" an hour","1个小时");
+    output = output.replace("about","大约");
+    output = output.replace("于于","于");
     actvs.getElementsByTagName("li")[donum].innerHTML = output;
     donum ++;
    }
@@ -27,5 +35,7 @@ function _uitranslation() {
   }
  }
 }
+
+_uitranslation();
 
 _uitranslation.loaded = true;
