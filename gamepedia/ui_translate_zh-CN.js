@@ -20,11 +20,17 @@ function _uitranslation() {
     output = output.replace(">hist<",">历史<");
     output = output.replace(')">',')">于');
     output = output.replace(" days","天");
-    output = output.replace(" a day","一天");
+    output = output.replace("a day","一天");
     output = output.replace(" ago","前");
     output = output.replace(" hours","个小时");
     output = output.replace("an hour","1个小时");
     output = output.replace("about ","大约");
+    output = output.replace(" months","个月");
+    output = output.replace("a month","1个月");
+    output = output.replace(" years","年");
+    output = output.replace("a year","1年");
+    output = output.replace(" minutes","分钟");
+    output = output.replace("a minute","1分钟");
     output = output.replace("于于","于");
     actvs.getElementsByTagName("li")[donum].innerHTML = output;
     donum ++;
@@ -35,7 +41,9 @@ function _uitranslation() {
   }
  }
 }
+_uitranslation.loopId = setInterval("_uitranslation();",500);
 
-_uitranslation();
+function _uitranslation_stop() {
+ clearInterval(_uitranslation.loopId);}
 
 _uitranslation.loaded = true;
