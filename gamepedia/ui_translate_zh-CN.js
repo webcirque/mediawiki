@@ -39,6 +39,7 @@ function _uitranslation() {
     output = output.replace("a minute","1分钟");
     output = output.replace("less than ","不到");
     output = output.replace('</a> (<a','</a> （<a');
+    output = output.replace('</a>) <time','</a>） <time');
     output = output.replace("于于","于");
     actvs.getElementsByTagName("li")[donum].innerHTML = output;
     donum ++;
