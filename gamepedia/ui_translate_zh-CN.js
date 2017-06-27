@@ -16,10 +16,14 @@ function _uitranslation() {
    actnum = actvs.getElementsByTagName("li").length;
    while (donum <actnum) {
     output = actvs.getElementsByTagName("li")[donum].innerHTML;
-    output = output.replace(">diff<","差异");
-    output = output.replace(">hist<","历史");
+    output = output.replace(">diff<",">差异<");
+    output = output.replace(">hist<",">历史<");
+    actvs.getElementsByTagName("li")[donum].innerHTML = output;
     donum ++;
    }
+   donum = undefined;
+   actnum = undefined;
+   output = undefined;
   }
  }
 }
