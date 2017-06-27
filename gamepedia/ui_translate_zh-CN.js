@@ -51,6 +51,6 @@ function _uitranslation_run() {
  _uitranslation.loopId = setInterval("_uitranslation();",100);
 console.warn("UI translation is running...");}
 _uitranslation_run();
-console.warn(console.warn("UI translation is fully initialized.");
+console.warn(console.warn("UI translation is fully initialized."));
 
 _uitranslation.loaded = true;
