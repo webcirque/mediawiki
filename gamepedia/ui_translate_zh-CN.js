@@ -1,4 +1,3 @@
-mw.loader.load("https://mwashfds.github.io/fds/libs/wmlib.min.js");
 //MediaWiki Information
 function _mw() {
  pageInfo = window.location.search.replace("?","");}
