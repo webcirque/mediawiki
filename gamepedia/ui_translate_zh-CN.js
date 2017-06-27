@@ -7,6 +7,7 @@ function _mw() {
 else {
  _mw.namespace = window.location.pathname.replace("/","").split(":")[0];
  _mw.pagename = window.location.pathname.replace("/","");}
+_mw();
 console.warn("MediaWiki Information Module initialized.");
 
 function _uitranslation() {
