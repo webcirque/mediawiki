@@ -4,8 +4,7 @@ function permanentBlock() {
  document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0].innerHTML="";
  document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0].style.display="none";}
  if (document.getElementById("atflb") !== null) {
-document.getElementById("atflb").style = 'position: absolute; top:-800px; ';
-document.getElementById("atflb").innerHTML = '<center style="color: red; font-size: 25px; font-family: "Verdana"; ">Element blocked.</center>';}
+document.getElementById("atflb").style = 'position: absolute; top:-800px; ';}
  if (document.getElementById("btflb") !== null) {
 document.getElementById("btflb").style = 'position: absolute; top:-800px; ';}
  if (document.getElementById("siderail") !== null) {
