@@ -1,4 +1,5 @@
 // Yes, this is a advertisement remover.
+if (_wm.version == undefined) {console.warn('Wmlib is not loaded. Waiting to be loaded...');}
 function permanentBlock() {
  if (document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0] !== undefined) {
  document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0].innerHTML="";
