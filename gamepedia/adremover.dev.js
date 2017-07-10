@@ -1,5 +1,6 @@
 // Yes, this is a advertisement remover.
-if (_wm !== undefined) {
+if (_wm == undefined) {console.warn('Wmlib is not loaded. Waiting to be loaded...');
+break;}
 function permanentBlock() {
  if (document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0] !== undefined) {
  document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0].innerHTML="";
@@ -24,4 +25,3 @@ document.getElementById("siderail").innerHTML = '';}}
  // Here for twitch remover and video ad remover.
 
 }
-else {console.warn('Wmlib is not loaded. Waiting to be loaded...');}
