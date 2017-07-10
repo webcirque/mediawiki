@@ -10,6 +10,11 @@ document.getElementById("btflb").style = 'position: absolute; top:-800px; ';}
  if (document.getElementById("siderail") !== null) {
 document.getElementById("siderail").style = 'position: absolute; top:-800px; height: 203px; ';
 document.getElementById("siderail").innerHTML = '&nbsp#;';}
+ if (document.getElementById("lotNbButton") !== null) {
+  document.getElementById("lotNbButton").style.display = "none"; }
+ if (document.getElementById("lotBeWrapper") !== null {
+  document.getElementById("lotBeWrapper").style.display = "none";
+  document.getElementById("lotBeWrapper").innerHTML="";}
  if (document.getElementById("p-sharing") !== null) {
 document.getElementById("p-sharing").innerHTML = '<span style="color: #ffffff; font-family: "Verdana"; ">WikiAdBlock</span>';}
 document.getElementById("bodyContent").style.width="100%";
