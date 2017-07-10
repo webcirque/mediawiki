@@ -12,7 +12,7 @@ document.getElementById("siderail").style = 'position: absolute; top:-800px; hei
 document.getElementById("siderail").innerHTML = '&nbsp#;';}
  if (document.getElementById("lotNbButton") !== null) {
   document.getElementById("lotNbButton").style.display = "none"; }
- if (document.getElementById("lotBeWrapper") !== null {
+ if (document.getElementById("lotBeWrapper") !== null) {
   document.getElementById("lotBeWrapper").style.display = "none";
   document.getElementById("lotBeWrapper").innerHTML="";}
  if (document.getElementById("p-sharing") !== null) {
