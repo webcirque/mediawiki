@@ -1,5 +1,5 @@
 // Yes, this is a advertisement remover.
-if (_wm) {
+if (_wm !== undefined) {
 function permanentBlock() {
  if (document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0] !== undefined) {
  document.getElementsByClassName('ad-placement ad-main-med-rect-footer')[0].innerHTML="";
