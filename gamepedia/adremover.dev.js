@@ -1,5 +1,5 @@
 // A new definition to AdRemover.
-blockList = ["atflb","btflb","siderail","lotNbButton","lotBeWrapper","p-sharing","class:ad-placement"];
+blockList = ["atflb","btflb","siderail","lotNbButton","lotBeWrapper","p-sharing","class:ad-placement","cdm-zone-03","class:ad-main-med-rect-footer"];
 dn = 0; _d = document; confirmedStyle="display:none;opacity:0;width:0px;height:0px;position:absolute;top:-2000px;";
 while(dn<blockList.length) {
  if (blockList[dn].search("class:") > -1 ) {
