@@ -10,7 +10,7 @@ while(dn<blockList.length) {
   ele.innerHTML = "";
   ele.style=confirmedStyle;
   ele.src="chrome://errpage/";}
-  else {console.warn("Element ID ["+blockList[dn]+"] not found, ignoring it.")}
+  else {if (mw.config._debug==true) {console.warn("Element Class ["+blockList[dn]+"] not found, ignoring it.")}}
  }
  else {
   if (mw.config._debug==true) {console.log("Blocking element by id:"+blockList[dn]+".");}
@@ -18,7 +18,7 @@ while(dn<blockList.length) {
   if (ele !== null) {
   ele.innerHTML = "";
   ele.style=confirmedStyle;}
-  else {console.warn("Element ID ["+blockList[dn]+"] not found, ignoring it.")}
+  else {if (mw.config._debug==true) {console.warn("Element ID ["+blockList[dn]+"] not found, ignoring it.")}}
  }
  dn++;
 }
