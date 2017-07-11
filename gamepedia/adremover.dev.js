@@ -23,4 +23,4 @@ while(dn<blockList.length) {
 }
 
 // When script is loaded.
-console.warn('Gamepedia AdRemover has finished executing.');
+console.warn('Gamepedia AdRemover version DR3 has finished executing.');
