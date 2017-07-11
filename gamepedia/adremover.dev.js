@@ -4,7 +4,7 @@ dn = 0; _d = document; confirmedStyle="display:none;opacity:0;width:0px;height:0
 while(dn<blockList.length) {
  if (blockList[dn].search("class:") > -1 ) {
   console.log("Blocking element by "+blockList[dn]+".");
-  ele = _d.getElementsByClassName(blockList[dn].replace("class:",""));
+  ele = _d.getElementsByClassName(blockList[dn].replace("class:",""))[0];
   if (ele !== null) {
   ele.innerHTML = "";
   ele.style=confirmedStyle;
