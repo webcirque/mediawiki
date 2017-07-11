@@ -4,7 +4,7 @@ function permBlock() {
 dn = 0; _d = document; confirmedStyle="display:none;opacity:0;width:0px;height:0px;position:absolute;top:-2000px;";
 while(dn<blockList.length) {
  if (blockList[dn].search("class:") > -1 ) {
-  if (debug==true) {console.log("Blocking element by "+blockList[dn]+".");}
+  if (mw.config._debug==true) {console.log("Blocking element by "+blockList[dn]+".");}
   ele = _d.getElementsByClassName(blockList[dn].replace("class:",""))[0];
   if (ele !== null) {
   ele.innerHTML = "";
@@ -13,7 +13,7 @@ while(dn<blockList.length) {
   else {console.warn("Element ID ["+blockList[dn]+"] not found, ignoring it.")}
  }
  else {
-  if (debug==true) {console.log("Blocking element by id:"+blockList[dn]+".");}
+  if (mw.config._debug==true) {console.log("Blocking element by id:"+blockList[dn]+".");}
   ele = _d.getElementById(blockList[dn]);
   if (ele !== null) {
   ele.innerHTML = "";
