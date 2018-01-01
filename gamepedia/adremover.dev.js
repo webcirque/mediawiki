@@ -6,24 +6,23 @@ while(dn<blockList.length) {
  if (blockList[dn].search("class:") > -1 ) {
   if (mw.config._debug==true) {console.log("Blocking element by "+blockList[dn]+".");}
   ele = _d.getElementsByClassName(blockList[dn].replace("class:",""))[0];
-  if (ele !== null) {
-  ele.innerHTML = "";
-  ele.style=confirmedStyle;
-  ele.src="chrome://errpage/";}
+  if (ele) {
+  ele.remove();
+  }
   else {if (mw.config._debug==true) {console.warn("Element Class ["+blockList[dn]+"] not found, ignoring it.")}}
  }
  else {
   if (mw.config._debug==true) {console.log("Blocking element by id:"+blockList[dn]+".");}
   ele = _d.getElementById(blockList[dn]);
-  if (ele !== null) {
-  ele.innerHTML = "";
-  ele.style=confirmedStyle;}
+  if (ele) {
+  ele.remove();
+  }
   else {if (mw.config._debug==true) {console.warn("Element ID ["+blockList[dn]+"] not found, ignoring it.")}}
  }
  dn++;
 }
 }
-setInterval("permBlock()",125)
+setInterval("permBlock()",400)
 
 // When script is loaded.
 console.warn('Gamepedia AdRemover version DR3 has finished executing.');
