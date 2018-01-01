@@ -1,0 +1,33 @@
+function replaceAll (str, ins, res) {
+	string = str;
+	if (ins !== res) {
+		while (string.search(ins) !== -1) {
+			string = string.replace(ins, res);
+		}
+		return string;
+	}
+	else {
+		return null;
+	}
+}
+try {
+ if (document.getElementById("mw-pageattr")) {
+  attr = eval("(" + replaceAll(document.getElementById("mw-pageattr").innerHTML, "\n","") + ")");
+  if (attr.css) {
+   if (attr.css.type=="remote") {
+    a = document.createElement("link");
+    a.rel = "stylesheet";
+    a.type = "text/css";
+    a.href = attr.css.content;
+    document.head.appendChild(a);
+   }
+   else if (attr.css.type=="embed") {
+    a = document.createElement("style");
+    a.innerHTML = attr.css.content;
+    document.head.appendChild(a);
+   }
+ }
+}
+catch(err) {
+ document.getElementById("bodyContent").innerHTML += "<p style=\"color:red\"><b>" + replaceAll(err.stack.toString(), "\n", "<br/>") + "</b></p>";
+}
