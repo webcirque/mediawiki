@@ -15,6 +15,8 @@ _mw();
 console.warn("MediaWiki Information Module initialized.");
 
 function _uitranslation() {
+ document.getElementById("Friends").innerHTML = "好友";
+ document.getElementById("Achievements").onnerHTML = "成就";
  if (_mw.namespace == "UserProfile") {
   actvs = document.getElementsByClassName("activity section")[0];
   if (actvs) {
