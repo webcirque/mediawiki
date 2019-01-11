@@ -90,5 +90,6 @@ title = document.getElementById('firstHeading');
 if (currnamespace == "User_talk") {title.innerHTML = title.innerHTML.replace("用户讨论","User talk");title.innerHTML = title.innerHTML.replace("利用者・トーク","User talk");}
 if (currnamespace == "User") {title.innerHTML = title.innerHTML.replace("用户","User");title.innerHTML = title.innerHTML.replace("利用者","User");}
 if (currnamespace == "Talk") {title.innerHTML = title.innerHTML.replace("讨论","Talk");title.innerHTML = title.innerHTML.replace("トーク","Talk");}
-if (currnamespace == "Special") {title.innerHTML = title.innerHTML.replace("特別","Special");}
+if (currnamespace == "Special") {title.innerHTML = title.innerHTML.replace("特殊","Special");}
 if (currnamespace == "Module") {title.innerHTML = title.innerHTML.replace("模块","Module");title.innerHTML = title.innerHTML.replace("モジュール","Module");}
+if (currnamespace == "UserProfile") {title.innerHTML = title.innerHTML.replace("用户资料","UserProfile");}
