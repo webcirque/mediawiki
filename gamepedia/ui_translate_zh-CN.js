@@ -17,8 +17,12 @@ console.warn("MediaWiki Information Module initialized.");
 function _uitranslation() {
  document.getElementById("Friends").innerHTML = "好友";
  document.getElementById("Achievements").onnerHTML = "成就";
-if (mw.config.get("wgNamespaceNumber") != 202) return;
-  $(".activity.section:first li").each(function() {
+ if (_mw.namespace == "UserProfile") {
+  actvs = document.getElementsByClassName("activity section")[0];
+  if (actvs) {
+   donum = 0;
+   actnum = actvs.getElementsByTagName("li").length;
+   while (donum <actnum) {
     output = actvs.getElementsByTagName("li")[donum].innerHTML;
     output = output.replace(">diff<",">差异<");
     output = output.replace(">hist<",">历史<");
