@@ -1,0 +1,49 @@
+.dev-back-enabled:hover {
+ outline: 1px solid magenta;
+}
+.dev-back-enabled *:hover {
+ background: rgba(0, 0, 0, 0.05);
+}
+.dev-back-enabled div:hover {
+ outline: 1px solid #09f;
+}
+.dev-back-enabled p:hover {
+ outline: 1px solid #c60;
+}
+.dev-back-enabled table:hover {
+ outline: 1px solid #0c0;
+}
+.dev-back-enabled table td:hover {
+ filter: invert(100%);
+}
+.dev-back-enabled table tr:hover {
+ background: rgba(255, 0, 180, 0.1);
+}
+.dev-back-enabled table th:hover {
+ outline: 1px solid #f00;
+}
+.dev-back-enabled ul:hover, .dev-back-enabled ol:hover {
+ outline: 1px solid #00f;
+}
+.dev-back-enabled dd:hover {
+ outline: 1px solid magenta;
+}
+.dev-back-enabled dt:hover {
+ outline: 1px solid purple;
+}
+.dev-back-enabled pre:hover {
+ outline: 1px solid brown;
+}
+.dev-js-infobox {
+ background: #000;
+ color: #fff;
+}
+.dev-js-infobox>.flexbox {
+ display: flex;
+}
+.dev-js-infobox>.flexbox>div {
+ flex: auto;
+}
+.dev-js-infobox>.flexbox>.noflex {
+ flex: initial;
+}
